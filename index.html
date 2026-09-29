@@ -93,7 +93,7 @@
             margin: 0 0 0.5rem 0;
             letter-spacing: -1px;
             font-weight: 700;
-            min-height: 3.5rem; /* Prevents layout jump during typing */
+            min-height: 3.5rem; 
         }
 
         .hero h2 {
@@ -251,7 +251,7 @@
             display: grid;
             grid-template-columns: 1fr;
             gap: 1.25rem;
-            align-items: start; /* Prevents neighbor accordions from stretching when one opens */
+            align-items: start; 
         }
 
         @media (min-width: 768px) {
@@ -287,7 +287,8 @@
             transform: translateY(-2px);
         }
 
-        .accordion-item.active {
+        /* Corrected Accordion Open State Class */
+        .accordion-item.accordion-open {
             border-color: var(--accent);
         }
 
@@ -327,13 +328,13 @@
             border-top: 1px solid transparent;
         }
 
-        /* Active State */
-        .accordion-item.active .accordion-icon {
+        /* Active State - Now uses .accordion-open */
+        .accordion-item.accordion-open .accordion-icon {
             transform: rotate(180deg);
             color: var(--accent);
         }
         
-        .accordion-item.active .accordion-content-inner {
+        .accordion-item.accordion-open .accordion-content-inner {
             border-top: 1px solid var(--border-color);
             margin-top: 0.5rem;
             padding-top: 1rem;
@@ -417,26 +418,24 @@
     <header class="hero" id="about">
         <img src="profile.jpg" alt="Mohamed Ibrahim" class="profile-img reveal" onerror="this.src='https://ui-avatars.com/api/?name=Mohamed+Ibrahim&size=250&background=161618&color=fcfcfc'">
         
-        <!-- Typewriter Target -->
-        <h1><span class="typewriter" data-text="Mohamed Ibrahim"></span><span class="cursor"></span></h1>
+        <h1><span class="typewriter" data-text="Mohamed Ibrahim"></span><span class="cursor"></span></h1> <!--[span_0](start_span)[span_0](end_span) -->
         
-        <h2 class="reveal">MEP FF & Plumbing Design Engineer | BIM Coordinator</h2>
+        <h2 class="reveal">MEP FF & Plumbing Design Engineer | BIM Coordinator</h2> <!--[span_1](start_span)[span_1](end_span) -->
         
         <div class="contact-info reveal">
-            <a href="mailto:mohamed.ibrahim777888999@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
-            <a href="tel:01026940888"><i class="fa-solid fa-phone"></i> 01026940888</a>
-            <a href="https://www.linkedin.com/in/mohamed-ibrahim-a211a8221" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-            <a href="#"><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</a>
+            <a href="mailto:mohamed.ibrahim777888999@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a> <!--[span_2](start_span)[span_2](end_span) -->
+            <a href="tel:01026940888"><i class="fa-solid fa-phone"></i> 01026940888</a> <!--[span_3](start_span)[span_3](end_span) -->
+            <a href="https://www.linkedin.com/in/mohamed-ibrahim-a211a8221" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a> <!--[span_4](start_span)[span_4](end_span) -->
+            <a href="#"><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</a> <!--[span_5](start_span)[span_5](end_span) -->
         </div>
         
         <p class="reveal" style="max-width: 600px; margin: 2.5rem auto 0 auto; color: var(--text-muted); font-size: 1.05rem;">
-            An enthusiastic junior engineer seeking to be unique in my field in addition to making a career that satisfies my ambitions and getting a challenging position.
+            An enthusiastic junior engineer seeking to be unique in my field in addition to making a career that satisfies my ambitions and getting a challenging position. <!--[span_6](start_span)[span_6](end_span) -->
         </p>
     </header>
 
     <main class="container">
         
-        <!-- Experience Section -->
         <section id="experience" style="margin-bottom: 5rem;">
             <h2 class="section-title">
                 <i class="fa-solid fa-clock-rotate-left reveal"></i> 
@@ -445,35 +444,34 @@
             
             <div class="timeline">
                 <div class="timeline-item reveal">
-                    <div class="timeline-date">9/2025 - Present</div>
-                    <h3 class="timeline-title">MEP FF & PL Design Engineer</h3>
-                    <div class="timeline-company"><i class="fa-regular fa-building"></i> SHAKER CONSULTANCY GROUP</div> <!--[span_0](start_span)[span_0](end_span) -->
+                    <div class="timeline-date">9/2025 - Present</div> <!--[span_7](start_span)[span_7](end_span) -->
+                    <h3 class="timeline-title">MEP FF & PL Design Engineer</h3> <!--[span_8](start_span)[span_8](end_span) -->
+                    <div class="timeline-company"><i class="fa-regular fa-building"></i> SHAKER CONSULTANCY GROUP</div> <!--[span_9](start_span)[span_9](end_span) -->
                 </div>
 
                 <div class="timeline-item reveal">
-                    <div class="timeline-date">3/2024 - 9/2025</div>
-                    <h3 class="timeline-title">FF & Plumbing Design Engineer, BIM Modular & Coordinator</h3>
-                    <div class="timeline-company"><i class="fa-regular fa-building"></i> Ideas Consultancy Office</div>
-                    <p>Designed H-Vac, Firefighting, plumbing, and infrastructure systems.</p> <!--[span_1](start_span)[span_1](end_span) -->
+                    <div class="timeline-date">3/2024 - 9/2025</div> <!--[span_10](start_span)[span_10](end_span) -->
+                    <h3 class="timeline-title">FF & Plumbing Design Engineer, BIM Modular & Coordinator</h3> <!--[span_11](start_span)[span_11](end_span) -->
+                    <div class="timeline-company"><i class="fa-regular fa-building"></i> Ideas Consultancy Office</div> <!--[span_12](start_span)[span_12](end_span) -->
+                    <p>Designed H-Vac, Firefighting, plumbing, and infrastructure systems.</p> <!--[span_13](start_span)[span_13](end_span) -->
                 </div>
 
                 <div class="timeline-item reveal">
-                    <div class="timeline-date">2/2023 - 2/2024</div>
-                    <h3 class="timeline-title">HVAC Design & Technical Office Engineer</h3>
-                    <div class="timeline-company"><i class="fa-regular fa-building"></i> Armed Forces Engineering Authority</div>
-                    <p>Designed the HVAC system for a command building. Reviewed contractors' project abstracts, prepared BOQs, prepared statistics of heavy-duty vehicles, and executed site supervision.</p> <!--[span_2](start_span)[span_2](end_span) -->
+                    <div class="timeline-date">2/2023 - 2/2024</div> <!--[span_14](start_span)[span_14](end_span) -->
+                    <h3 class="timeline-title">HVAC Design & Technical Office Engineer</h3> <!--[span_15](start_span)[span_15](end_span) -->
+                    <div class="timeline-company"><i class="fa-regular fa-building"></i> Armed Forces Engineering Authority</div> <!--[span_16](start_span)[span_16](end_span) -->
+                    <p>Designed the HVAC system for a command building. Reviewed contractors' project abstracts, prepared BOQs, prepared statistics of heavy-duty vehicles, and executed site supervision.</p> <!--[span_17](start_span)[span_17](end_span) -->
                 </div>
                 
                 <div class="timeline-item reveal">
-                    <div class="timeline-date">8/2022 - 1/2023</div>
-                    <h3 class="timeline-title">Data Entry</h3>
-                    <div class="timeline-company"><i class="fa-regular fa-building"></i> The American University In Cairo</div>
-                    <p>Part of a team working to provide easy access for the university alumni to their student's data.</p> <!--[span_3](start_span)[span_3](end_span) -->
+                    <div class="timeline-date">8/2022 - 1/2023</div> <!--[span_18](start_span)[span_18](end_span) -->
+                    <h3 class="timeline-title">Data Entry</h3> <!--[span_19](start_span)[span_19](end_span) -->
+                    <div class="timeline-company"><i class="fa-regular fa-building"></i> The American University In Cairo</div> <!--[span_20](start_span)[span_20](end_span) -->
+                    <p>Part of a team working to provide easy access for the university alumni to their student's data.</p> <!--[span_21](start_span)[span_21](end_span) -->
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
         <section id="projects" style="margin-bottom: 5rem;">
             <h2 class="section-title">
                 <i class="fa-solid fa-diagram-project reveal"></i> 
@@ -489,7 +487,7 @@
                         Abou QIR Underground Metro <i class="fa-solid fa-chevron-down accordion-icon"></i>
                     </div>
                     <div class="accordion-content">
-                        <div class="accordion-content-inner">Alexandria-Abou Qir Underground Metro Line FF & Plumbing design and coordination including all calculations (Hydraulic calculations, booster pumps, submersible pumps,..) of all stations.</div> <!--[span_4](start_span)[span_4](end_span) -->
+                        <div class="accordion-content-inner">Alexandria-Abou Qir Underground Metro Line FF & Plumbing design and coordination including all calculations (Hydraulic calculations, booster pumps, submersible pumps,..) of all stations.</div> <!--[span_22](start_span)[span_22](end_span) -->
                     </div>
                 </div>
 
@@ -498,7 +496,7 @@
                         Northbay Infrastructure <i class="fa-solid fa-chevron-down accordion-icon"></i>
                     </div>
                     <div class="accordion-content">
-                        <div class="accordion-content-inner">Design an infrastructure network for northbay city, watersupply, irrigation and sewage systems containing utilities (liftstations, tank and pumproom).</div> <!--[span_5](start_span)[span_5](end_span) -->
+                        <div class="accordion-content-inner">Design an infrastructure network for northbay city, watersupply, irrigation and sewage systems containing utilities (liftstations, tank and pumproom).</div> <!--[span_23](start_span)[span_23](end_span) -->
                     </div>
                 </div>
 
@@ -507,7 +505,7 @@
                         Tuban Infrastructure <i class="fa-solid fa-chevron-down accordion-icon"></i>
                     </div>
                     <div class="accordion-content">
-                        <div class="accordion-content-inner">Design an infrastructure network for tuban city, watersupply, irrigation and sewage systems containing utilities.</div> <!--[span_6](start_span)[span_6](end_span) -->
+                        <div class="accordion-content-inner">Design an infrastructure network for tuban city, watersupply, irrigation and sewage systems containing utilities.</div> <!--[span_24](start_span)[span_24](end_span) -->
                     </div>
                 </div>
 
@@ -516,7 +514,7 @@
                         Memphis University <i class="fa-solid fa-chevron-down accordion-icon"></i>
                     </div>
                     <div class="accordion-content">
-                        <div class="accordion-content-inner">Design an infrastructure network for Memphis university, preparing concept of design, BODR, and calculation reports using WaterCAD and SewerCAD.</div> <!--[span_7](start_span)[span_7](end_span) -->
+                        <div class="accordion-content-inner">Design an infrastructure network for Memphis university, preparing concept of design, BODR, and calculation reports using WaterCAD and SewerCAD.</div> <!--[span_25](start_span)[span_25](end_span) -->
                     </div>
                 </div>
 
@@ -525,7 +523,7 @@
                         Saudi Farm Infrastructure <i class="fa-solid fa-chevron-down accordion-icon"></i>
                     </div>
                     <div class="accordion-content">
-                        <div class="accordion-content-inner">Design infrastructure networks for a huge farm. Segregated water supply into treated networks for human use and untreated for animal use.</div> <!--[span_8](start_span)[span_8](end_span) -->
+                        <div class="accordion-content-inner">Design infrastructure networks for a huge farm. Segregated water supply into treated networks for human use and untreated for animal use.</div> <!--[span_26](start_span)[span_26](end_span) -->
                     </div>
                 </div>
 
@@ -534,7 +532,7 @@
                         Remal Staff Infrastructure <i class="fa-solid fa-chevron-down accordion-icon"></i>
                     </div>
                     <div class="accordion-content">
-                        <div class="accordion-content-inner">Design an infrastructure network for remal staff compound, watersupply, irrigation and sewage systems containing utilities.</div> <!--[span_9](start_span)[span_9](end_span) -->
+                        <div class="accordion-content-inner">Design an infrastructure network for remal staff compound, watersupply, irrigation and sewage systems containing utilities.</div> <!--[span_27](start_span)[span_27](end_span) -->
                     </div>
                 </div>
 
@@ -543,7 +541,7 @@
                         HAP Infrastructure <i class="fa-solid fa-chevron-down accordion-icon"></i>
                     </div>
                     <div class="accordion-content">
-                        <div class="accordion-content-inner">Design an infrastructure network for Hap city, watersupply, irrigation and sewage systems containing utilities (liftstations, tank and pumproom).</div> <!--[span_10](start_span)[span_10](end_span) -->
+                        <div class="accordion-content-inner">Design an infrastructure network for Hap city, watersupply, irrigation and sewage systems containing utilities (liftstations, tank and pumproom).</div> <!--[span_28](start_span)[span_28](end_span) -->
                     </div>
                 </div>
                 
@@ -552,7 +550,7 @@
                         Pools & Water Features <i class="fa-solid fa-chevron-down accordion-icon"></i>
                     </div>
                     <div class="accordion-content">
-                        <div class="accordion-content-inner">Design water supply and drainage systems (Skimmer & Overflow), selection of filter and pumps, and sizing of pipes.</div> <!--[span_11](start_span)[span_11](end_span) -->
+                        <div class="accordion-content-inner">Design water supply and drainage systems (Skimmer & Overflow), selection of filter and pumps, and sizing of pipes.</div> <!--[span_29](start_span)[span_29](end_span) -->
                     </div>
                 </div>
 
@@ -561,7 +559,7 @@
                         Arabia Landscape <i class="fa-solid fa-chevron-down accordion-icon"></i>
                     </div>
                     <div class="accordion-content">
-                        <div class="accordion-content-inner">Design Irrigation and drainage network for a landscape area, viewing details of valve boxes and sizing pipes.</div> <!--[span_12](start_span)[span_12](end_span) -->
+                        <div class="accordion-content-inner">Design Irrigation and drainage network for a landscape area, viewing details of valve boxes and sizing pipes.</div> <!--[span_30](start_span)[span_30](end_span) -->
                     </div>
                 </div>
 
@@ -570,7 +568,7 @@
                         K KESH Landscape <i class="fa-solid fa-chevron-down accordion-icon"></i>
                     </div>
                     <div class="accordion-content">
-                        <div class="accordion-content-inner">Design Irrigation, water supply and drainage networks for landscape area for four entering gates and the main square.</div> <!--[span_13](start_span)[span_13](end_span) -->
+                        <div class="accordion-content-inner">Design Irrigation, water supply and drainage networks for landscape area for four entering gates and the main square.</div> <!--[span_31](start_span)[span_31](end_span) -->
                     </div>
                 </div>
 
@@ -579,7 +577,7 @@
                         Shina, Oman <i class="fa-solid fa-chevron-down accordion-icon"></i>
                     </div>
                     <div class="accordion-content">
-                        <div class="accordion-content-inner">Design Irrigation sprinkler system (main and submain) networks serving landscape areas with all dimensions and spacing.</div> <!--[span_14](start_span)[span_14](end_span) -->
+                        <div class="accordion-content-inner">Design Irrigation sprinkler system (main and submain) networks serving landscape areas with all dimensions and spacing.</div> <!--[span_32](start_span)[span_32](end_span) -->
                     </div>
                 </div>
             </div>
@@ -593,7 +591,7 @@
                         Monte Galala - Towers <i class="fa-solid fa-chevron-down accordion-icon"></i>
                     </div>
                     <div class="accordion-content">
-                        <div class="accordion-content-inner">Monte Galala Ain Sokhna Towers, FF & Plumbing design and coordination including all calculations. Making decision of all system selection for high-rise tower.</div> <!--[span_15](start_span)[span_15](end_span) -->
+                        <div class="accordion-content-inner">Monte Galala Ain Sokhna Towers, FF & Plumbing design and coordination including all calculations. Making decision of all system selection for high-rise tower.</div> <!--[span_33](start_span)[span_33](end_span) -->
                     </div>
                 </div>
 
@@ -602,7 +600,7 @@
                         YADA FACTORY <i class="fa-solid fa-chevron-down accordion-icon"></i>
                     </div>
                     <div class="accordion-content">
-                        <div class="accordion-content-inner">Design Firefighting & Plumbing networks. FF network classified as ordinary and extra hazard zones, consists of upright sprinkler system, FHC, and FM200.</div> <!--[span_16](start_span)[span_16](end_span) -->
+                        <div class="accordion-content-inner">Design Firefighting & Plumbing networks. FF network classified as ordinary and extra hazard zones, consists of upright sprinkler system, FHC, and FM200.</div> <!--[span_34](start_span)[span_34](end_span) -->
                     </div>
                 </div>
 
@@ -611,7 +609,7 @@
                         CCC Basement, Four Season <i class="fa-solid fa-chevron-down accordion-icon"></i>
                     </div>
                     <div class="accordion-content">
-                        <div class="accordion-content-inner">Shop drawing for basement boundaries (A,B,C,D,E). Using Revit software for coordination of Hvac, firefighting, plumbing systems.</div> <!--[span_17](start_span)[span_17](end_span) -->
+                        <div class="accordion-content-inner">Shop drawing for basement boundaries (A,B,C,D,E). Using Revit software for coordination of Hvac, firefighting, plumbing systems.</div> <!--[span_35](start_span)[span_35](end_span) -->
                     </div>
                 </div>
 
@@ -620,7 +618,7 @@
                         Kempenski Staff House <i class="fa-solid fa-chevron-down accordion-icon"></i>
                     </div>
                     <div class="accordion-content">
-                        <div class="accordion-content-inner">Designing an hvac, firefighting and plumbing systems for a staff house building.</div> <!--[span_18](start_span)[span_18](end_span) -->
+                        <div class="accordion-content-inner">Designing an hvac, firefighting and plumbing systems for a staff house building.</div> <!--[span_36](start_span)[span_36](end_span) -->
                     </div>
                 </div>
 
@@ -629,7 +627,7 @@
                         Swiss School, Elgouna <i class="fa-solid fa-chevron-down accordion-icon"></i>
                     </div>
                     <div class="accordion-content">
-                        <div class="accordion-content-inner">Designing hvac, firefighting and plumbing systems for four buildings (ADMIN, SECONDARY, KINDERGARTEN & SCIENCE), sizing sump pit to infrastructure.</div> <!--[span_19](start_span)[span_19](end_span) -->
+                        <div class="accordion-content-inner">Designing hvac, firefighting and plumbing systems for four buildings (ADMIN, SECONDARY, KINDERGARTEN & SCIENCE), sizing sump pit to infrastructure.</div> <!--[span_37](start_span)[span_37](end_span) -->
                     </div>
                 </div>
 
@@ -638,7 +636,7 @@
                         Northbay Villas <i class="fa-solid fa-chevron-down accordion-icon"></i>
                     </div>
                     <div class="accordion-content">
-                        <div class="accordion-content-inner">Design hvac (concealed split units) and plumbing system RVT model for northbay villas in elgouna.</div> <!--[span_20](start_span)[span_20](end_span) -->
+                        <div class="accordion-content-inner">Design hvac (concealed split units) and plumbing system RVT model for northbay villas in elgouna.</div> <!--[span_38](start_span)[span_38](end_span) -->
                     </div>
                 </div>
 
@@ -647,7 +645,7 @@
                         Shrief Hotel <i class="fa-solid fa-chevron-down accordion-icon"></i>
                     </div>
                     <div class="accordion-content">
-                        <div class="accordion-content-inner">Designing an hvac, firefighting and plumbing systems for a hotel consisting of four floors and basement.</div> <!--[span_21](start_span)[span_21](end_span) -->
+                        <div class="accordion-content-inner">Designing an hvac, firefighting and plumbing systems for a hotel consisting of four floors and basement.</div> <!--[span_39](start_span)[span_39](end_span) -->
                     </div>
                 </div>
 
@@ -656,7 +654,7 @@
                         CAC School <i class="fa-solid fa-chevron-down accordion-icon"></i>
                     </div>
                     <div class="accordion-content">
-                        <div class="accordion-content-inner">Supervision of As built systems & design of new proposal drainage & firefighting & hvac systems for new buildings.</div> <!--[span_22](start_span)[span_22](end_span) -->
+                        <div class="accordion-content-inner">Supervision of As built systems & design of new proposal drainage & firefighting & hvac systems for new buildings.</div> <!--[span_40](start_span)[span_40](end_span) -->
                     </div>
                 </div>
 
@@ -665,7 +663,7 @@
                         HUB 40 / ANA NATCO <i class="fa-solid fa-chevron-down accordion-icon"></i>
                     </div>
                     <div class="accordion-content">
-                        <div class="accordion-content-inner">Design review of HVAC, Firefighting and Drainage systems, and calculations of sumpits for the HUB 40 mall and ANA NATCO Smouha.</div> <!--[span_23](start_span)[span_23](end_span) -->
+                        <div class="accordion-content-inner">Design review of HVAC, Firefighting and Drainage systems, and calculations of sumpits for the HUB 40 mall and ANA NATCO Smouha.</div> <!--[span_41](start_span)[span_41](end_span) -->
                     </div>
                 </div>
 
@@ -674,7 +672,7 @@
                         Club House - Palm Hills <i class="fa-solid fa-chevron-down accordion-icon"></i>
                     </div>
                     <div class="accordion-content">
-                        <div class="accordion-content-inner">Designing an hvac (Package units), firefighting and plumbing systems for a club consisting of three buildings.</div> <!--[span_24](start_span)[span_24](end_span) -->
+                        <div class="accordion-content-inner">Designing an hvac (Package units), firefighting and plumbing systems for a club consisting of three buildings.</div> <!--[span_42](start_span)[span_42](end_span) -->
                     </div>
                 </div>
 
@@ -683,7 +681,7 @@
                         Active, Benha <i class="fa-solid fa-chevron-down accordion-icon"></i>
                     </div>
                     <div class="accordion-content">
-                        <div class="accordion-content-inner">Designing an hvac (chilled water system tie in), firefighting and plumbing systems for a retail house.</div> <!--[span_25](start_span)[span_25](end_span) -->
+                        <div class="accordion-content-inner">Designing an hvac (chilled water system tie in), firefighting and plumbing systems for a retail house.</div> <!--[span_43](start_span)[span_43](end_span) -->
                     </div>
                 </div>
                 
@@ -692,7 +690,7 @@
                         SN-Automotive Showroom <i class="fa-solid fa-chevron-down accordion-icon"></i>
                     </div>
                     <div class="accordion-content">
-                        <div class="accordion-content-inner">Designing hvac system (Package units & Concealed units), firefighting and plumbing systems.</div> <!--[span_26](start_span)[span_26](end_span) -->
+                        <div class="accordion-content-inner">Designing hvac system (Package units & Concealed units), firefighting and plumbing systems.</div> <!--[span_44](start_span)[span_44](end_span) -->
                     </div>
                 </div>
                 
@@ -701,13 +699,12 @@
                         Power Ministry, Saudi Arabia <i class="fa-solid fa-chevron-down accordion-icon"></i>
                     </div>
                     <div class="accordion-content">
-                        <div class="accordion-content-inner">Design various hvac systems: ground floor roof top package units 10 ton, first and second floors concealed units 3.5 ton.</div> <!--[span_27](start_span)[span_27](end_span) -->
+                        <div class="accordion-content-inner">Design various hvac systems: ground floor roof top package units 10 ton, first and second floors concealed units 3.5 ton.</div> <!--[span_45](start_span)[span_45](end_span) -->
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
         <section id="skills" style="margin-bottom: 5rem;">
             <h2 class="section-title">
                 <i class="fa-solid fa-layer-group reveal"></i> 
@@ -715,27 +712,26 @@
             </h2>
             
             <div class="skills-container">
-                <div class="skill-badge reveal" style="transition-delay: 0.1s;"><i class="fa-solid fa-pen-ruler"></i> AutoCAD</div>
-                <div class="skill-badge reveal" style="transition-delay: 0.2s;"><i class="fa-solid fa-cube"></i> Revit</div>
-                <div class="skill-badge reveal" style="transition-delay: 0.3s;"><i class="fa-solid fa-cubes"></i> Navisworks</div>
-                <div class="skill-badge reveal" style="transition-delay: 0.4s;"><i class="fa-solid fa-fan"></i> HAP</div>
-                <div class="skill-badge reveal" style="transition-delay: 0.5s;"><i class="fa-solid fa-wind"></i> Duct Sizer</div>
-                <div class="skill-badge reveal" style="transition-delay: 0.6s;"><i class="fa-solid fa-fire-extinguisher"></i> Fire Elite</div>
-                <div class="skill-badge reveal" style="transition-delay: 0.7s;"><i class="fa-solid fa-faucet-drip"></i> WaterCAD</div>
-                <div class="skill-badge reveal" style="transition-delay: 0.8s;"><i class="fa-solid fa-water"></i> SewerCAD</div>
+                <div class="skill-badge reveal" style="transition-delay: 0.1s;"><i class="fa-solid fa-pen-ruler"></i> AutoCAD</div> <!--[span_46](start_span)[span_46](end_span) -->
+                <div class="skill-badge reveal" style="transition-delay: 0.2s;"><i class="fa-solid fa-cube"></i> Revit</div> <!--[span_47](start_span)[span_47](end_span) -->
+                <div class="skill-badge reveal" style="transition-delay: 0.3s;"><i class="fa-solid fa-cubes"></i> Navisworks</div> <!--[span_48](start_span)[span_48](end_span) -->
+                <div class="skill-badge reveal" style="transition-delay: 0.4s;"><i class="fa-solid fa-fan"></i> HAP</div> <!--[span_49](start_span)[span_49](end_span) -->
+                <div class="skill-badge reveal" style="transition-delay: 0.5s;"><i class="fa-solid fa-wind"></i> Duct Sizer</div> <!--[span_50](start_span)[span_50](end_span) -->
+                <div class="skill-badge reveal" style="transition-delay: 0.6s;"><i class="fa-solid fa-fire-extinguisher"></i> Fire Elite</div> <!--[span_51](start_span)[span_51](end_span) -->
+                <div class="skill-badge reveal" style="transition-delay: 0.7s;"><i class="fa-solid fa-faucet-drip"></i> WaterCAD</div> <!--[span_52](start_span)[span_52](end_span) -->
+                <div class="skill-badge reveal" style="transition-delay: 0.8s;"><i class="fa-solid fa-water"></i> SewerCAD</div> <!--[span_53](start_span)[span_53](end_span) -->
             </div>
         </section>
 
-        <!-- Education Section -->
         <section id="education">
             <h2 class="section-title">
                 <i class="fa-solid fa-graduation-cap reveal"></i> 
                 <span class="typewriter" data-text="Education"></span><span class="cursor"></span>
             </h2>
             <div class="edu-card reveal">
-                <h3 style="margin-top: 0; font-size: 1.3rem;">Bachelor of Engineering in Mechanical Power</h3>
-                <p style="color: var(--accent); font-weight: 600; margin-bottom: 1rem; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px;">Shoubra University | 2022 | Grade: Good</p> <!--[span_28](start_span)[span_28](end_span) -->
-                <p style="margin-bottom: 0; color: var(--text-muted);"><strong>Graduation Project:</strong> Designed and manufactured a small, high-efficiency wind turbine equipped with slats to generate electrical power (Grade: Excellent).</p> <!--[span_29](start_span)[span_29](end_span) -->
+                <h3 style="margin-top: 0; font-size: 1.3rem;">Bachelor of Engineering in Mechanical Power</h3> <!--[span_54](start_span)[span_54](end_span) -->
+                <p style="color: var(--accent); font-weight: 600; margin-bottom: 1rem; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px;">Shoubra University | 2022 | Grade: Good</p> <!--[span_55](start_span)[span_55](end_span) -->
+                <p style="margin-bottom: 0; color: var(--text-muted);"><strong>Graduation Project:</strong> Designed and manufactured a small, high-efficiency wind turbine equipped with slats to generate electrical power (Grade: Excellent).</p> <!--[span_56](start_span)[span_56](end_span) -->
             </div>
         </section>
         
@@ -747,31 +743,31 @@
 
     <!-- Interactive Scripts -->
     <script>
-        // 1. Accordion Logic
+        // 1. Fixed Accordion Logic
         function toggleAccordion(element) {
             const item = element.parentElement;
             const content = element.nextElementSibling;
             
-            // Optional: Close all others within the same grid container
+            // Close all others within the same grid container
             const gridContainer = item.parentElement;
             gridContainer.querySelectorAll('.accordion-item').forEach(acc => {
                 if (acc !== item) {
-                    acc.classList.remove('active');
+                    acc.classList.remove('accordion-open');
                     acc.querySelector('.accordion-content').style.maxHeight = null;
                 }
             });
 
             // Toggle clicked item
-            item.classList.toggle('active');
+            item.classList.toggle('accordion-open');
             
-            if (item.classList.contains('active')) {
+            if (item.classList.contains('accordion-open')) {
                 content.style.maxHeight = content.scrollHeight + "px";
             } else {
                 content.style.maxHeight = null;
             }
         }
 
-        // 2. Intersection Observer for Scroll Animations (Slide Up / Fade In)
+        // 2. Intersection Observer for Scroll Animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: "0px 0px -50px 0px"
@@ -781,7 +777,7 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('active');
-                    observer.unobserve(entry.target); // Only animate once
+                    observer.unobserve(entry.target); 
                 }
             });
         }, observerOptions);
@@ -796,10 +792,10 @@
                 if (entry.isIntersecting) {
                     const el = entry.target;
                     const text = el.getAttribute('data-text');
-                    el.textContent = ''; // Clear text
+                    el.textContent = ''; 
                     
                     let i = 0;
-                    const typeSpeed = 60; // Speed of typing in ms
+                    const typeSpeed = 60; 
                     
                     const typingInterval = setInterval(() => {
                         if (i < text.length) {
@@ -810,13 +806,13 @@
                         }
                     }, typeSpeed);
 
-                    observer.unobserve(el); // Only type once
+                    observer.unobserve(el); 
                 }
             });
         }, { threshold: 0.5 });
 
         document.querySelectorAll('.typewriter').forEach(el => {
-            el.textContent = ''; // Ensure it starts blank
+            el.textContent = ''; 
             typeObserver.observe(el);
         });
     </script>
